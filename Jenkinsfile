@@ -1,9 +1,12 @@
 pipeline {
-  agent = any
+  agent  any
   tools{
     maven  "maven3.9"
     jdk "OracleJDK8"
   }
+
+  // The SSH private key for the agent
+    credentials '/var/jenkins_ssh/id_rsa'
 
    environment {
         NEXUS_VERSION = "nexus3"
