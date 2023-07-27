@@ -5,9 +5,6 @@ pipeline {
     jdk "OracleJDK8"
   }
 
-  // The SSH private key for the agent
-    credentials '/var/jenkins_ssh/id_rsa'
-
    environment {
         NEXUS_VERSION = "nexus3"
         SNAP_REPO = "vprofile-snapshot"
