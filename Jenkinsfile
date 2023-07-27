@@ -6,7 +6,6 @@ pipeline {
   }
 
    environment {
-
         NEXUS_VERSION = "nexus3"
         SNAP_REPO = "vprofile-snapshot"
         NEXUS_USER = "admin"
@@ -26,5 +25,5 @@ pipeline {
       }
     }
   }
-  
+
 }
