@@ -6,10 +6,12 @@ pipeline {
     }
 }
 
+
   tools{
     maven  "maven3.9"
     jdk "JDK_11"
   }
+
 
    environment {
         NEXUS_VERSION = "nexus3"
