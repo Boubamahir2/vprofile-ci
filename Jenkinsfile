@@ -1,7 +1,5 @@
 pipeline {
-  agent {
-    label "jenkins_sandbox_agent"
-  }
+  agent "jenkins_sandbox_agent"
 
   tools{
     maven  "maven3.9"
