@@ -2,6 +2,8 @@ pipeline {
   agent {
     docker {
         image 'jenkins_sandbox_agent:latest'
+        args '-v /var/run/docker.sock:/var/run/docker.sock'
+
     }
 }
 
