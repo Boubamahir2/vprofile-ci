@@ -1,7 +1,7 @@
 pipeline {
   agent {
     docker {
-        image 'jenkins_sandbox_agent:tag'
+        image 'jenkins_sandbox_agent:latest'
     }
 }
 
