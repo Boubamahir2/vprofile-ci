@@ -1,6 +1,6 @@
 pipeline {
   agent {
-    label "<jenkins_sandbox_agent>"
+    label "jenkins_sandbox_agent && java11"
     // Custom Docker image for the agent (if needed)
     docker {
         image 'jenkins_sandbox_agent:tag'
@@ -8,10 +8,10 @@ pipeline {
     // The SSH private key for the agent
     credentials '/var/jenkins_ssh/id_rsa'
   }
-  
+
   tools{
     maven  "maven3.9"
-    jdk "OracleJDK8"
+    jdk "JDK_11"
   }
 
    environment {
