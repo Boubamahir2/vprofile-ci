@@ -1,11 +1,11 @@
 pipeline {
   agent {
     docker {
-        image 'jenkins_sandbox_agent:latest'
-        args '-v /var/run/docker.sock:/var/run/docker.sock' 
+      image 'jenkins_sandbox_agent:latest' 
+      label 'my_custom_agent' // Replace 'my_custom_agent' with the label of the Docker-capable Jenkins agent
+      args '-v /var/run/docker.sock:/var/run/docker.sock' 
     }
-}
-
+  }
 
   tools{
     maven  "maven3.9"
