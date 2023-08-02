@@ -1,5 +1,6 @@
 pipeline {
   agent {
+    label "<docker-dynamic-agent>"
     docker {
       image 'dynamic-agent'  
     }
