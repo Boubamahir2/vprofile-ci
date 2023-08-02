@@ -1,7 +1,7 @@
 pipeline {
   agent {
     docker {
-      image 'docker-dynamic-agent'  
+      image 'dynamic-agent'  
     }
   }
 
