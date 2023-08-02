@@ -1,14 +1,9 @@
 pipeline {
-  agent {
-    label "<docker-dynamic-agent>"
-    docker {
-      image 'dynamic-agent'  
-    }
-  }
-
+  agent any
+  
   tools{
-    maven  "maven3.9"
-    jdk "JDK_11"
+    maven  "MAVEN3"
+    jdk "OracleJDK"
   }
 
 
@@ -18,7 +13,7 @@ pipeline {
         NEXUS_USER = "admin"
         NEXUS_PASS = "1998"
         NEXUS_PROTOCOL = "http"
-        NEXUS_URL = "172.25.0.3:8081"
+        NEXUS_URL = "192.168.56.1:8081"
         NEXUS_REPOSITORY = "vprofile-release"
         CENTRAL_REPO = "vprofile-maven-centraL"
 	      NEXUS_REPOGRP_ID    = "vprofile-maven-group"
