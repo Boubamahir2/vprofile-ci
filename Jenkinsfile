@@ -2,8 +2,8 @@ pipeline {
   agent any
   
   tools{
-    maven  "MAVEN3"
-    jdk "OracleJDK"
+    maven  "maven3.9"
+    jdk "JDK_11"
   }
 
 
@@ -15,7 +15,7 @@ pipeline {
         NEXUS_PROTOCOL = "http"
         NEXUS_URL = "192.168.56.1:8081"
         NEXUS_REPOSITORY = "vprofile-release"
-        CENTRAL_REPO = "vprofile-maven-centraL"
+        CENTRAL_REPO = "vprofile-maven-central"
 	      NEXUS_REPOGRP_ID    = "vprofile-maven-group"
         NEXUS_CREDENTIAL_ID = "nexuslogin"
     }
