@@ -2,8 +2,8 @@ pipeline {
   agent any
 
   tools{
-    maven  "maven3.9"
-    jdk "JDK_11"
+    maven  "MAVEN3"
+    jdk "Oraclejdk"
   }
 
 
