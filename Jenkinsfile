@@ -1,9 +1,5 @@
 pipeline {
-  agent {
-    docker {
-      image 'dynamic-agent'  
-    }
-  }
+  agent any
 
   tools{
     maven  "maven3.9"
